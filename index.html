@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>MaeveFlix</title>
-</head>
-<body>
-  <a href="https://www.instagram.com/maevesystem" class="container" target="_blank">
-    <h1 class="page-title">MaeveFlix</h1>
-  </a>
-  <script src="app.js"></script>
-</body>
+<html>
+  <head>
+    <title>MaeveFlix</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shirink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title animate_fadeIn">MaeveFlix</h1>
+      <p class="page-subtitle">Qual seu filme favorito?</p>
+      <div class="input-area">
+        <input
+          type="text"
+          id="filme"
+          name="filme"
+          placeholder="Insira endereço de imagem"
+          style="width: 500px; border-radius: 30px"
+        />
+        <input
+          type="text"
+          id="nomeFilme"
+          name="nomeFilme"
+          placeholder="Insira o nome do filme"
+          style="width: 500px; border-radius: 30px"
+        />
+      </div>
+      <button class="adicionar-filme" onClick="adicionarFilme()">
+        Adicionar Filme
+      </button>
+
+      <div id="listaFilmes"></div>
+      <div id="listaSagas"></div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+  <footer></footer>
 </html>
